@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<header>
+    <h1>
+        SNAKE 🐍 GAME
+    </h1>
+</header>
+
+<body>
+    <div id="corpo">
+        <div id="div1">
+            
+            <h1>COMO JOGAR 🕹️</h1>
+            <h2>W = CIMA ↑</h2>
+            <h2>A = ESQUERDA ←</h2>
+            <h2>S = BAIXO ↓</h2>
+            <h2>D = DIREITA →</h2>
+            <h2>N = NOVO JOGO 🆕</h2>
+            <h2>P = ▶️ INICIAR/PAUSAR ⏸️</h2>
+            
+
+
+
+            <!--  <img class="imgTecla" src="imagens/tecla.png" /> -->
+        </div>
+
+        <div id="div2">
+
+            <h2 class="vidasTopo">❤️X</h2>
+            <h2 class="vidasTopo" id="vidas">3</h2>
+
+            <h2 class="score" id="score"> 0</h2>
+            <h2 class="score">SCORE = </h2>
+
+            <canvas id="tela" width="640" height="500"></canvas>
+
+            <div id="btn">
+
+                <button class="botoes" type="button" onclick="pausa()" id="btPausa" disabled="">CONTINUAR</button>
+                <button class="botoes" type="button" onclick="novoJogo();start()" id="btNovo">NOVO JOGO</button>
+
+                <script src="js/Nodo.js"> </script>
+                <script src="js/script.js"></script>
+            </div>
+        </div>
+
+
+
+        <div id="div3">
+
+            <table id="tabela_pontos">
+                <thead>
+                    <tr>
+                        <th>🏆 MAIORES PONTUAÇÕES 🏆</th>
+                        
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+
+        </div>
+
+
+    </div>
+</body>
+
+<footer>
+    <h3> Desenvolvido por Alexandre Tertuliano e Oscar Oshiro.</h3>
+</footer>
+
+</html>
